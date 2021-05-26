@@ -1,5 +1,5 @@
 import './App.css';
-import Panel from './Panel';
+import Navigation from './Navigation';
 import FakeServer from './FakeServer';
 import EventEmitter from 'eventemitter3';
 import { AppContext } from './AppContext';
@@ -13,14 +13,12 @@ const appContext = {
 
 function App() {
   return (
-    <div className="App">
+
       <AppContext.Provider value={appContext}>
-        <header>
-        Header
-        </header>
-        <Panel />
+        <div className="App">
+          <Navigation />
+        </div>
       </AppContext.Provider>
-    </div>
   );
 }
 
