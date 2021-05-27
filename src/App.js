@@ -15,9 +15,7 @@ function App() {
   return (
 
       <AppContext.Provider value={appContext}>
-        <div className="App">
           <Navigation />
-        </div>
       </AppContext.Provider>
   );
 }
