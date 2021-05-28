@@ -1,5 +1,6 @@
 import React from 'react';
 import { AppContext } from './AppContext';
+import { Link } from 'react-router-dom';
 
 class Page extends React.Component {
     constructor(props) {
@@ -19,6 +20,10 @@ class Page extends React.Component {
                 {this.normalizedChildren().map(child => {
                         return child;
                     })}
+                <footer>
+                    <Link to='/'>Home</Link>  |
+                    <Link to='/about'>About</Link>
+                </footer>
             </div>
           );
     }

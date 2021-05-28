@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Controls from './Controls';
 import Posts from './Posts';
 import { AppContext } from './AppContext';
@@ -30,6 +31,7 @@ class Panel extends React.Component {
                 This is just a panel {this.context.title}
                 <Posts posts={this.state.posts} />
                 <Controls />
+                <Link to="/about">About</Link>
             </div>
           );
     }
